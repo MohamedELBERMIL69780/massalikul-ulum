@@ -1,0 +1,2339 @@
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+}
+
+
+p::selection{
+    background: #caad13;
+    color: white;
+}
+
+
+
+.toggle{
+    display: none;
+}
+
+
+
+/* progress-bar */
+#barre {
+    height: 10px;
+    width: 0;
+    border-radius: 0 50px 50px 0;
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(to right,rgb(2 4 25), #c4a127);
+    z-index: 32;
+}
+
+/* scroll-bar */
+::-webkit-scrollbar {
+    width: 1em;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #f9c0ae;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #caad13;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ffe14e;
+}
+  
+  
+  
+::-webkit-scrollbar-track {
+    background-color: #050924;
+}
+
+
+/* --------HEADER------------------- */
+header {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    text-transform: uppercase;
+    height: 88px;
+    color: #fff;
+    padding: 0 2rem;
+    transition: all 0.25s ease-in-out;
+  }
+ 
+#logo{
+    width: 3em;
+    transition-duration: .4s ;
+}
+
+#logo:hover {
+    width: 3em;
+    transform: rotate(359deg);}
+
+  header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 4em;
+}
+    
+      
+  .nav_header.scroll {
+    background-color: #04071D;
+    height: 4em;
+}
+
+nav>a{
+        text-decoration: none;
+        flex: 1;
+}
+
+nav ul li a {
+    color: white;
+    text-transform: lowercase;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+    background: linear-gradient(to top, #CAAD13 0%, #CAAD13 0px, transparent 3px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size .3s;
+    margin: -l;
+    margin-left: 29px;
+}
+
+
+nav ul li a:hover{
+background-size: 100% 100%;
+color: #CAAD13;
+
+}
+
+nav ul li{
+    display: flex;
+    flex-direction:initial;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul {
+    flex: 13;
+    margin: 0 0;
+}
+
+#Logo-menu{
+    display: none;
+}
+
+
+
+
+
+#contact {
+    border: solid white 1px;
+    color: white;
+    border-radius: 30px;
+    padding: 3px 11px;
+    background: none;
+    transition-duration: .4s;
+}
+#contact1 {
+    border: solid white 1px;
+    color: white;
+    border-radius: 30px;
+    padding: 3px 11px;
+    background: none;
+    transition-duration: .4s;
+    font-size: 9px;
+}
+
+#contact:hover{
+    background-color: white;
+
+}
+#contact a{
+    padding: 4px 14px;
+
+}
+
+#contact a:hover{
+    color: white;
+    color: black;
+
+}
+
+
+
+.btn_nav {
+    position: absolute;
+    left: inherit;
+    right: 2%;
+    top: 27%;
+}
+.btn_nav1 {
+    left: inherit;
+    right: 2%;
+    top: 27%;
+    display: none;
+}
+
+
+
+#formules {
+    background-color: #CAAD13;
+    border-radius: 30px;
+    padding: 3px 20px;
+    transition-duration: .4s;
+}
+
+#formules1 {
+    background-color: #CAAD13;
+    border-radius: 30px;
+    padding: 3px 15px;
+    transition-duration: .4s;
+    font-size: 9px;
+    margin-left: 7px;
+}
+
+#formules:hover{
+    background: #ffc938;
+    filter: blur(0px);}
+
+
+
+
+#contact a, #formules a{
+    color:white;
+    text-decoration:none; 
+
+}
+
+/* --------MAIN------------------- */
+
+.banniere{
+    width: 100%;
+}
+
+.valeurs {
+    display: flex;
+    Font-size: 27px;
+    color: #C4A127;
+    font-weight: 600;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#hr_top {
+    height: 9px;
+    width: 27%;
+    margin-bottom: 33px;
+    background-color: #C4A127;
+    opacity: inherit;
+    margin: 31px 0;
+}
+
+#hr_down {
+    height: 9px;
+    width: 26%;
+    margin-bottom: 33px;
+    position: absolute;
+    right: 0;
+    background-color: #C4A127;
+    opacity: inherit;
+}
+
+/* --------enseignement de qualité------------------- */
+
+#enseignement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6em;
+}
+
+#enseignement img {
+    Width: 415px;
+    Height: 213px;
+    border-radius: 12px;
+}
+
+.Texte_enseignement{
+    margin-left: 26px;
+}
+
+#enseignement h1 {
+    font-weight: 600;
+    font-size: 31px;
+}
+
+#enseignement p {
+    Font-size: 16px;
+    line-height: 31px;
+}
+
+/* -- --------Vous en parlez mieux que nous------------------- */
+
+#Avis_titre {
+    font-weight: 800;
+    font-size: 31px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 3em;
+    text-transform: uppercase;
+}
+
+.All_element_avis {
+    display: flex;
+    width: 98%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#Avis {
+    width: 100%;
+    overflow: hidden;
+}
+
+.product{
+    display: none;
+}
+
+.Bloc_avis {
+    background-color: white;
+    width: 26em;
+    height: 14em;
+    border-radius: 10px;
+    border: solid #d1d1d1 1px;
+    margin: 3em 0.6% 1em 0.6%;
+    position: relative;
+}
+
+.Bloc_avis1 img{
+    display: none;
+}
+
+#pp {
+    vertical-align: middle;
+    width: 59px;
+    border-radius: 51px;
+    position: absolute;
+    left: 29px;
+    top: 19px;
+    position: relative;
+}
+  
+  .Bloc_avis #nom {
+    position: absolute;
+    top: 5.2em;
+    left: 85px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: center;
+  }
+
+  .temoignage {
+    position: absolute;
+    font-size: 13px;
+    line-height: 17px;
+    top: 49%;
+    margin: 0 27px;
+    overflow: auto;
+    height: 92px;
+}
+
+.pseudo {
+    position: absolute;
+    top: 3em;
+    font-size: 9px;
+    left: 11em;
+}
+
+.prenom {
+    top: 3px;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.sous_texte{
+    position: absolute;
+    top: 24px;
+    color: #6e6e6e;
+}
+
+#All_temoignages{
+    font-size: 13px;
+    text-align: center;
+}
+
+#All_temoignages a{
+    color: #caad13;
+}
+
+/* -- --------Vidéos récentes------------------- */
+
+
+#video h3{
+        font-weight: 800;
+        font-size: 31px;
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 3em;
+        text-transform: uppercase;
+    }
+
+    .video {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5em;
+    }
+
+    #video_big{
+        height: 384px;
+        width: 39em;
+    }
+    
+
+.video iframe{
+    border-radius: 33px;
+    margin: 1em 1em 0 0;
+    height: 183px;
+    width: 384px;
+    display: block;
+}
+  
+/* -- -------- Nos cursus------------------- */
+
+#cursus h4 {
+    font-weight: 800;
+    font-size: 31px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 3em;
+    text-transform: uppercase;
+}
+
+.All_formules {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: context-menu;
+    flex-wrap: wrap;
+}
+
+
+.formule {
+    width: 323px;
+    height: 35em;
+    background-color: #1F2F38;
+    border-radius: 20px;
+    transition-duration: .3s;
+    margin: 3em 1em;
+}
+
+.formule:hover {
+    box-shadow: 8px 8px 23px #38445e;
+}
+
+.formule a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Formule linguistique */
+.bandeau1 {
+    position: relative;
+    background-color: #E9AC08;
+    border-radius: 15px 15px 0 0;
+    height: 3em;
+}
+
+.bandeau1 p, .bandeau2 p, .bandeau3 p {
+    position: absolute;
+    top: 14px;
+    left: 70px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.prestations_formules {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.63);
+    margin-top: 44px;
+    line-height: 36px;
+}
+
+.prestations_formules p{
+    margin: 9px 0;
+}
+
+.prestations_formules span{
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    margin-top: -24px;
+    margin-left: -77px;
+}
+
+
+.separateur_prestations {
+    height: 2px;
+    width: 259px;
+    margin: 0px 25px;
+    color: white;
+}
+
+.prix{
+    color: white;
+    font-size: 25px;
+}
+
+.recap_des_cours{
+    margin-top: 20px;
+}
+
+.btnNinfos{
+    display: inline-grid;
+    margin: 0 87px;
+}
+
+#btn_jaune{
+    padding: 10px 27px;
+    border-radius: 51px;
+    background: #e9ac08;
+    transition-duration: .2s;
+
+}
+#btn_jaune:hover {
+    background: #ffc938;
+    filter: blur(0px);
+}
+
+#infos_prestations{
+    font-size: 13px;
+    margin-top: 17px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Formule Coranique */
+
+.bandeau2 {
+    position: relative;
+    background-color: #4B5EE1;
+    border-radius: 15px 15px 0 0;
+    height: 3em;
+}
+
+#btn_bleu{
+    padding: 10px 27px;
+    border-radius: 51px;
+    background: #4B5EE1;
+    transition-duration: .2s;
+}
+
+#btn_bleu:hover{
+    background: #6c7eff;
+    filter: blur(0px);
+}
+
+/* Formule Norania */
+
+
+.bandeau3 {
+    position: relative;
+    background-color: #61AD80;
+    border-radius: 15px 15px 0 0;
+    height: 3em;
+}
+
+#btn_vert {
+    padding: 10px 22px;
+    border-radius: 51px;
+    background: #61ad80;
+    transition-duration: .2s;
+}
+#btn_vert:hover{
+    background: #8bd5a9;
+    filter: blur(0px);
+}
+
+/* Aide choix cursus */
+
+
+.recap_des_cours {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.recap_des_cours a{
+    color: #C4A127;
+    text-decoration: underline;
+}
+
+/* Nos atouts*/
+
+#Nos_atouts {
+    width: 100%;
+    background: linear-gradient(#09135F, #050924);
+    padding: 17px 0;
+    margin-top: 3em;
+}
+
+#Nos_atouts h5 {
+    text-align: center;
+    color: white;
+    Font-size: 37px;
+    font-weight: 800;
+    margin-bottom: 21px;
+}
+
+.All_bloc_atouts{
+    display: flex;
+    justify-content: center;
+}
+
+.All_bloc_atouts img {
+    width: 122px;
+    margin:51px;
+    margin: 0px 0 0 29px;
+}
+
+.bloc_atout {
+    width: 11em;
+    height: 8em;
+    background-color: #4256E1;
+    margin-left: 24px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.bloc_atout2 {
+    width: 11em;
+    height: 8em;
+    background-color: #ffffff;
+    margin-left: 24px;
+    border-radius: 8px;
+
+    width: 11em;
+    height: 8em;
+    background-color: #ffffff;
+    margin-left: 24px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.bloc_atout p{
+    color: white;
+    margin: -22px 33px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.bloc_atout2 p{color: #50336E;margin: -23px 33px;font-size: 13px;font-weight: 600;text-align: center;}
+/* Nos enseignants*/
+
+#Nos_enseignants h6 {
+    font-weight: 800;
+    font-size: 31px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 3em;
+    text-transform: uppercase;
+}
+
+.All_teachers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 57px;
+}
+
+.Teacher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 2em 4em;
+}
+
+.NomNtexte{
+    text-align: center;
+}
+
+.Teacher img{
+    border-radius: 114px;
+    box-sizing: 54px 0 0 0;
+    box-shadow: 8px 1px 12px #2d345a61;
+    width: 112px;
+}
+
+#prenom_teacher {
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.texte_professeurs{
+    font-size: 13px;
+}
+
+
+/* Hadith*/
+
+.Hadith {
+    background-color: #748AFF;
+    width: 54%;
+    border-radius: 0 142px 142px 0;
+    color: white;
+    padding: 13px 90px 1px 20px;
+}
+
+#hadith{
+    font-size: 15px;
+}
+
+.Hadith span p{
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 0px;
+}
+
+
+/* Aide aux étudiants + cagnotte */
+
+#cagnotte{
+    display: flex;
+    width: 100%;
+    position: relative;
+
+}
+
+#cagnotte img {
+    width: 50%;
+    margin-top: 9px;
+}
+
+#aide_etudiant{
+    flex: 1;
+}
+
+.cagnotte img{
+    flex: 2;
+    margin-top: 9px
+}
+
+.cagnotte{
+    display: flex;
+}
+
+
+
+#cagnotte_btn {
+    background-color: #748aff;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    border-radius: 54px 0 0 0;
+    width: 11em;
+    height: 43px;
+    padding: 13px 0;
+    transition-duration: .2s;
+}
+
+#cagnotte_btn:hover{
+    background-color:#8c9eff ;
+    color: white;
+}
+
+#cagnotte_btn a{
+    color:white;
+    text-decoration: none;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #020419;
+    color: white;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 5em 64px;
+    align-items: flex-start;
+    position: relative;
+    
+}
+
+ 
+  
+  #credit{
+    font-size: 66%;
+      position: absolute;
+      bottom: 1em;
+      color: #ffffff7a;
+      left: 32px;
+      font-family: inherit;
+  }
+  
+  
+  .reseaux img {
+    width: 43px;
+    cursor: pointer;
+    margin-right: 0.2em;
+    margin-top: 0.3em;
+  }
+
+  #Logo_footer {
+    width: 13em;
+    margin-top: -2.7em;
+}
+  
+  
+  #reseaux {
+    color: #caad13;
+    text-align: center;
+    font-size: 23px;    
+    text-transform: uppercase;
+  
+  }
+
+  
+  
+  
+  #coordonnee {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 23px;
+    text-transform: uppercase;
+  }
+  
+  .coordonnee a {
+    display: block;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .coordonnee a:hover {
+    color: #CAAD13;
+  }
+  
+  .coordonnee p {
+    margin-top: 0.1em;
+  }
+  
+
+  #coordonnee {
+    color: #caad13;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 23px;
+    text-transform: uppercase;
+  }
+  
+  .Mentions_legale a {
+    display: block;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .Mentions_legale a:hover {
+    color: #CAAD13;
+  }
+  
+  .Mentions_legale p {
+    margin-top: 0.1em;
+  }
+
+  .fab, .fa-brands {
+    font-weight: 400;
+    font-size: 2em;
+    transition-duration: .5s;
+
+}
+
+.fa-brands{
+    color: white;
+}
+
+#instagram:hover{
+    color: #eb54c3;
+}
+#twitter:hover{
+    color:#1da1f3;
+}
+#youtube:hover{
+    color: #f00;
+}
+  
+
+/* Librairie */
+
+.Titre{
+    position: relative;
+    display: block;
+
+}
+
+.Titre h1 {
+    font-weight: 800;
+    font-size: 54px;
+    text-align: center;
+    margin-top: 1em;
+    text-transform: uppercase;
+    color: #C4A127;
+    margin-bottom: 1em;
+}
+
+.Titre p {
+    position: absolute;
+    top: 53px;
+    left: 49%;
+    text-transform: uppercase;
+    color: #C4A127;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.Titre_cursus_arabe h2 {
+    Font-size: 2em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.Titre_cursus_arabe p{
+    Font-size : 16px
+}
+
+
+.livre {
+    background-color: #f1f1f1;
+    /* border: solid 1px rgb(199 199 199); */
+    width: 586px;
+    height: 256px;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    transition-duration: .6s;
+    margin-top: 3em;
+    cursor: context-menu;
+}
+
+
+.livre:hover{
+    box-shadow: 4px 4px 12px #162330ad;
+    border: none;
+    background: white;
+
+}
+
+
+.livre img{
+    width: 11em;
+    height: 15em;
+    border-radius: 20px;
+    margin: 7px 7px;
+}
+
+
+#Livres_liste {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 29em;
+    margin-top: 10em;
+}
+
+#niveaux {
+    color: #caad13;
+    margin: 18px 0 2px 0;
+}
+
+#price{
+    font-size: 2em;
+}
+
+.livre p{
+    font-size: 13px;
+}
+
+.texte_livre span{
+    font-weight: 600;
+}
+
+.texte_livre{
+    padding: 0 15px;
+}
+
+#Lien_externe {
+    position: absolute;
+    left: 196px;
+    bottom: 13px;
+    background: #caad13;
+    padding: 6px 14px;
+    border-radius: 6px;
+    color: white;
+    transition-duration: .4s;
+}
+
+#Lien_externe a {
+    text-decoration: none;
+    color: white;
+    padding: 9px 14px;
+}
+
+#Lien_externe:hover{
+    background: #ffc938;
+    filter: blur(0px);
+}
+
+.All_books{
+    margin-bottom: 7em;
+}
+
+
+
+/* contact */
+
+#nous-contacter {
+    margin: 90px 0;
+}
+
+#nous-contacter a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#Texte_contacte {
+    text-align: center;
+    margin: 6em 0;
+}
+
+.two_input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 880px;
+    padding: 59px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 50px -10px #0a091236;
+    font-size: 12px;
+}
+
+
+section#nous-contacter .two_input form{
+    max-width:600px ;
+}
+
+section#nous-contacter .two_input form input,
+section#nous-contacter .two_input form textarea{
+    margin: 10px 22px;
+    border:none;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: solid 2px #e7e7e7;
+    transition: 0.2s;
+    padding: 10px;
+    width: 42%;
+}
+
+section#nous-contacter .two_input form textarea{
+    width: 88%;
+    resize: none;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+section#nous-contacter .two_input form input::placeholder{
+    padding-left:8px;
+    font-size: 13px;
+}
+
+section#nous-contacter .two_input form input:hover,
+section#nous-contacter .two_input form textarea:hover
+{
+    border-bottom: solid 2px #C4A127;
+
+}
+
+
+section#nous-contacter .two_input form button {
+    background-color: #C4A127;
+    color: #fff;
+    padding: 11px 50px;
+    border-radius: 7px;
+    font-size: 16px;
+    margin: 1em 33%;
+    transition-duration: .4s;
+}
+
+section#nous-contacter .two_input form button:hover{
+    background-color: #ffc938;
+
+}
+
+
+/* Nos formules */
+
+.Formule-disposition2{
+    margin-bottom: 14em;
+}
+
+#hr_left{
+    height: 3px;
+    width: 453px;
+    margin-bottom: 33px;
+    right: 0;
+    background-color: #C4A127;
+    opacity: inherit;
+}
+
+#hr_right {
+    height: 3px;
+    width: 453px;
+    margin-bottom: 33px;
+    background-color: #C4A127;
+    opacity: inherit;
+    position: absolute;
+    right: 0px;
+}
+
+.All_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    margin-top: 11em;
+    /* flex-wrap: wrap; */
+    margin-right: 6em;
+    margin-left: 6em;
+}
+
+.All_form1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    margin-top: 11em;
+    flex-direction: row-reverse;
+}
+
+
+/* ---formule linguistique */
+
+
+.textNbtn_form{
+    flex: 1;
+}
+
+.texteNbtn_form h2{
+    font-weight: 800;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.text-formules{
+    width: 823px;
+}
+
+
+.btn_formulaire{
+    display: flex;
+}
+
+.images_formules {
+    border-radius: 354px;
+    width: 17em;
+    margin-left: 5%;
+}
+
+#btn_linguistique {
+    background-color: #FFBA00;
+    padding: 7px 20px;
+    border-radius: 53px;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition-duration: .4s;
+}
+
+#btn_linguistique:hover {
+    background: #ffc938;
+    filter: blur(0px);
+    box-shadow: 3px 2px 0px #ffa500;
+}
+
+#btn_linguistique a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.btn_infos {
+    background-color: #B7B7B7;
+    padding: 7px 20px;
+    border-radius: 53px;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-left: 1em;
+    transition-duration: .4s;
+}
+
+
+
+.btn_formulaire a{
+    color: white;
+    text-decoration: none;
+
+}
+
+
+/* ------formule coranique */
+
+
+.textNbtn_form{
+    flex: 1;
+}
+
+.texteNbtn_form h2{
+    font-weight: 800;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.text-formules{
+    width: 84%;
+}
+
+.images_formules_reverse {
+    border-radius: 354px;
+    width: 17em;
+    margin-left: 5%;
+    margin-right: 8%;
+}
+
+
+
+#btn_coranique {
+    background-color: #3A4AA1;
+    padding: 7px 20px;
+    border-radius: 53px;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition-duration: .4s;
+}
+
+#btn_coranique:hover {
+    background: #6c7eff;
+    filter: blur(0px);
+    box-shadow: 3px 2px 0px #3850ff;}
+
+.btn_infos:hover {
+    background: #9b9b9b;
+    box-shadow: 3px 2px 0px #0c0d1699;
+    
+}
+
+
+
+
+/* -------formule norania */
+
+#btn_norania{
+    background: #61AD80;
+    padding: 7px 20px;
+    border-radius: 53px;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition-duration: .4s;
+}
+
+#btn_norania:hover {
+    background: #8bd5a9;
+    box-shadow: 3px 2px 0px #36ad66;
+    filter: blur(0px);
+}
+
+/* séminaires */
+
+#Texte_seminaires {
+    text-align: center;
+    font-size: 16px;
+    margin: 7em 0;
+}
+
+#seminaires {
+    margin-top: 7em;
+    margin-bottom: 6em;
+}
+
+#seminaires h2 {
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 85%;
+    margin: 20px 3%;
+}
+
+
+.TextNimage_seminaire p{
+    font-size: 1em;
+    font-weight: 800;
+}
+
+.bloc_seminaire {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: solid #d1d1d1 1px;
+    width: 94%;
+    margin: 2em auto;
+    padding: 22px;
+    transition-duration: .4s;
+}
+
+.bloc_seminaire:hover{
+    border: solid 1px #ffc938;
+}
+
+.bloc_seminaire img{
+    width: 243px;
+    border-radius: 6px;
+}
+
+.Text_tarifs {
+    margin-left: 1.5em;
+    margin-top: 4em;
+}
+
+.Text_tarifs span{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.infos_before_purchase{
+    font-size: 9px;
+    font-style: italic;
+}
+
+.description_seminaire{
+    font-size: 14px;
+}
+
+.commander{
+    background: #caad13;
+    padding: 6px 14px;
+    border-radius: 6px;
+    color: white;
+    transition-duration: .4s;
+}
+
+.commander:hover {
+    background: #ffc938;
+    filter: blur(0px);
+}
+
+/* a-propos */
+
+.experiences_teachers ul li{
+    list-style-type:disc;
+    color: #4E8BAF;
+}
+
+#hr_a_propos hr{
+    height: 28em;
+    margin: 0 0 0 0;
+}
+
+
+
+.hr_a_propos{
+    height: 371px;
+    width: 2px;
+    margin-left: 1em;
+    margin-top: 82px;
+}
+
+#Texte_a_propos{
+    margin: 0 23%;
+}
+
+#Texte_a_propos{
+    margin: 6em 23%;
+    text-align: center;
+}
+
+
+.Teacher {
+    display: flex;
+    align-items: center;
+    margin: 1em 2em 4em;
+    flex-direction: column;
+}
+
+.All_teachers1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 57px;
+}
+
+#temoignages_eleves{
+    margin: 6% 0;
+}
+
+#temoignages_eleves h3 {
+    font-weight: 800;
+    font-size: 31px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 43px;
+}
+
+.temoignages_ex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#temoignages_eleves img{
+    width: 12em;
+    margin-left: 1em;
+}
+
+/* formule linguistique */
+
+#niveau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.level_different {
+    display: flex;
+    flex-direction: column;
+    width: 21em;
+    margin: 4em 6em;
+    flex-wrap: wrap;
+}
+
+
+
+.level_different h2,
+.level_different h3, 
+.level_different h4, 
+.level_different h5 {
+    font-weight: 600;
+    font-size: 31px;
+}
+
+.level_different p {
+    font-size: 11px;
+    margin: 2em 0 3em 0;
+}
+
+.level_different img {
+    width: 19em;
+    box-shadow: 7px 11px 19px #343f7647;
+}
+
+.Titre h6 {
+    font-weight: 800;
+    font-size: 54px;
+    text-align: center;
+    margin-top: 1em;
+    text-transform: uppercase;
+    color: #C4A127;
+    margin-bottom: 1em;
+}
+
+.Texte_cursus p {
+    padding: 0 14%;
+    font-size: 19px;
+    margin-top: 10em;
+}
+
+.pdf_programme {
+    text-align: center;
+    margin: 9em 0;
+}
+
+#programme_title {
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 8%;
+}
+
+.PDF_download {
+    color: #808080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6em 0;
+}
+
+.PDF_download img{
+    width: 4em;
+}
+
+#programme_langue {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+#download {
+    padding: 6px 20px;
+    background-color: #808080;
+    color: #fff;
+    text-decoration: none;
+    margin-top: -10px;
+    transition-duration: .4s;
+}
+
+#download:hover{
+    background: #5e5e5e;
+}
+
+.PDF_texte{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 18px;
+}
+
+#inscris1 {
+    background-color: #FFBA00;
+    color: #fff;
+    padding: 3px 2em;
+    font-size: 2em;
+    border-radius: 6px;
+    transition-duration: .4s;
+}
+
+#inscris1:hover{
+    box-shadow: 7px 6px 0 #ff9900;
+}
+
+
+
+
+/* Formule coranique */
+
+#coranique_texte {
+    padding: 0 21%;
+    margin-top: 7em;
+    text-align: center;
+}
+
+#Tajwid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8em 0;
+}
+
+#Tajwid h2,h3{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+#trait {
+    height: 23em;
+    width: 8px;
+    margin: 0 1em;
+}
+
+.tajwid_texte{
+padding: 0 3em;
+}
+
+.tajwid_texte p{
+    font-size: 14px;
+}
+
+
+#inscris2 {
+    background-color: #4B5EE1;
+    color: rgb(255, 255, 255);
+    padding: 3px 2em;
+    font-size: 2em;
+    border-radius: 6px;
+    transition-duration: 0.4s;
+}
+
+#inscris2:hover {
+    box-shadow: 7px 6px 0 #273ab7;
+}
+
+
+/* Actualité */
+
+.carousel {
+    position: relative;
+    width: 40em;
+    height: 20em;
+}
+
+#carouselNarticles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8em;
+    margin: 9em 1em;
+}
+
+.articles_right {
+    background: #ededed;
+    margin-left: 10px;
+}
+.articles_bloc_right {
+    width: 36em;
+    position: relative;
+    height: 107px;
+}
+
+.articles_bloc_right img {
+    width: 6em;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    height: 5em;
+}
+.Title_article {
+    position: absolute;
+    left: 129px;
+    top: 13px;
+    font-size: 18px;
+}
+
+.carousel-item{
+    height: 20em;
+}
+
+
+.Texte_articles_bloc{
+    top: 3em;
+    position: absolute;
+    left: 129px;
+    font-size: 13px;
+    margin: 0;
+}
+
+.date_article{
+   position: absolute;
+   top: 79px;
+   left: 128px;
+   font-size: 13px;
+   color: #AAAAAA;
+   margin: 0;
+}
+
+#dernieres_actualités{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 6em 0 0 144px;
+}
+
+.articles_populaires {
+    background: #262935;
+    padding: 9px 18px;
+    width: 13em;
+    height: 2em;
+    color: white;
+    margin: 50px 145px;
+}
+
+.articles_populaires h3{
+    font-size: 15px;
+}
+
+.imageNtext_article {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 31px 9em;
+}
+.imageNtext_article img{
+    height: 15em;
+}
+
+.Texte_articles_down{
+    padding-left: 1em;
+    width: 42em;
+}
+
+#Arti_title{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+/* ------RESPONSIVE--------- */
+
+
+
+@media screen and (min-width:1836px){
+    #enseignement img {
+        Width: 43%;
+        height: inherit;
+        border-radius: 52px;
+    }
+
+    #enseignement h1 {
+        font-size: 55px;
+    }
+
+    #enseignement p {
+        Font-size: 20px;
+    }    }
+
+
+
+
+@media screen and (max-width:1116px){
+    #carouselNarticles{
+        flex-direction: column;
+    }
+
+    .articles_right {
+        margin-left:0 ;
+        margin-top: 1em;
+    }
+
+    .articles_bloc_right {
+        width: 40em;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width:1024px){
+    
+    /* ---index media query */
+    #enseignement{
+        flex-direction: column;
+    }
+
+    #enseignement p {
+        Font-size: 13px;
+        padding: 0 3%;
+    }
+
+    .Texte_enseignement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+    }
+
+
+   
+
+    .product {
+        position: relative;
+        overflow: hidden;
+        margin: 0 2%;
+        display: block;
+      }
+      .product-category {
+        padding: 0 10vw;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 40px;
+        text-transform: capitalize;
+      }
+      .product-container {
+        padding: 3px 3vw 21px 0vw;
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+      .product-container::-webkit-scrollbar {
+        display: none;
+      }
+      .product-card {
+        flex: 0 0 auto;
+        width: 250px;
+        height: 450px;
+        margin-right: 40px;
+      }
+      .product-image {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+      }
+      .product-thumb {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .bloc_avis{
+        width: 40em;
+      }
+
+      .All_element_avis{
+        display: none;
+      }
+
+      .Bloc_avis1 {
+        background-color: white;
+        width: 26em;
+        height: 14em;
+        border-radius: 10px;
+        border: solid #d1d1d1 1px;
+        margin: 3em 0.6% 1em 0.6%;
+        position: relative;
+    }
+
+    .Bloc_avis1 img{
+        display: block;
+    }
+
+    .video {
+        display: flex;
+        justify-content: center;
+        margin-top: 5em;
+    }
+
+    .video iframe {
+        margin: 1em 1em 0 0;
+    }
+
+    #video_big {
+        margin-left: 1em;
+    }
+
+    .recap_des_cours p{
+        font-size: 74%;
+    }
+
+    .All_element_avis1 {
+        display: flex;
+        width: 83em;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #video_big {
+        height: 384px;
+        width: 28em;
+    }
+
+    #Livres_liste {
+
+        padding: 0 21%;
+      
+    }
+
+    /* ---a-propos---- */
+    #temoignages_eleves img {
+        width: 22%;
+        margin-left: 1em;
+    }
+
+    .temoignages_ex{
+        display: none;
+    }
+
+    .temoignages_ex1{
+        display: flex;
+    }
+    .temoignages_ex1 img {
+        width: 12em;
+        margin-right: 1em;
+        display: block;
+    }
+
+    /* ----Actualité */
+    .imageNtext_article {
+        margin: 31px 1em;
+    }
+
+    .Art-paragraphe{
+        font-size: 70%;
+    }
+
+    /* -----Contact------ */
+    .two_input {
+        max-width: 92%;
+    }
+    
+
+   
+    }
+
+    @media screen and (min-width:1024px){
+        #Livres_liste {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 18%;
+            margin-top: 10em;
+        }
+
+        
+    }
+
+    @media screen and (max-width: 880px){
+        
+        /* ---index media query */
+        .video {
+            display: flex;
+            justify-content: center;
+            margin-top: 5em;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .video_little, #video_big {
+            height: 380px;
+            width: 95%;
+        }
+
+        .video_right{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #video_little{
+            width: 95%;
+            height: 380px;
+       
+        }
+
+        .video iframe {
+            margin: 2em 0em 0 0;
+        }
+
+        #video_big {
+             margin-left: 0;
+        }
+    }
+
+
+
+
+
+@media screen and (max-width: 768px){
+      
+    /* ---index media query */
+    .nav_header{
+        background-color: #050924;
+        height: 4em;
+    }    
+    
+    header nav{
+        height: 4em;
+    }
+   
+    header nav li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 29em 0;
+        font-size: 12px;
+        background: #050924;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform ease 0.9s;
+        
+
+    }
+
+    .btn_nav{
+        display: none;
+    }
+
+    .open header nav li {
+        transform: translateX(0);
+    }
+    .toggle {
+        display: block;
+        position: relative;
+        z-index: 20;
+    }
+
+    .toggle .fermer {
+        display: none;
+    }
+
+    .open .fermer {
+    display: block;
+    font-size: 2em;
+    }
+
+    .open .ouvrir {
+    display: none;
+    font-size: 2em;
+    }   
+
+    .ouvrir {
+        display: block;
+        font-size: 2em;
+    }
+
+    .fermer{
+        display: block;
+        font-size: 2em; 
+    }
+
+    nav ul li a {
+        font-size: 263%;
+        margin-bottom: 1em;
+        margin-left:0 ;
+    }
+
+    .btn_nav1{
+        display: block;
+    }
+
+    .recap_des_cours {
+        margin: 0 2em;
+    }
+
+    .Bloc_avis1 {
+        width: 17em;
+        height: 11em;
+    }
+
+    .temoignage {
+        font-size: 10px;
+    }
+
+    .video {
+        margin-top: 0em;
+    }
+
+    #Logo-menu {
+        display: block;
+        width: 37em;
+        position: absolute;
+        right: -116px;
+        top: 12em;
+        opacity: 0.2;
+        filter: brightness(0.5);
+        z-index: -1;
+    }
+
+    .Hadith {
+        width: 95%;
+        padding: 10px 41px 1px 10px;
+    }
+
+    #hadith {
+        font-size: 10px;
+    }
+
+    #cagnotte {
+        flex-direction: column;
+    }
+
+    #cagnotte img {
+        width: 100%;
+        margin-top: 9px;
+    }
+
+    #cagnotte_btn {
+        border-radius: 57px 57px 0 0;
+        width: 100%;
+        height: 10%;
+        padding: 0px 0;
+        font-size: 13px;
+    }
+
+   
+
+    /* ------librairie */
+    .livre {
+        width: 98%;
+        margin: 3em auto;
+    }
+
+    #Livres_liste {
+        padding: 0 16%;
+    }
+
+    .livre p {
+        font-size: 73%;
+    }
+
+    .livre {
+        width: 98%;
+        margin: 1em 56px 4em 1px;
+        height: 31em;
+        flex-direction: column;
+    }
+
+    .livre img {
+        width: 100%;
+        height: 14em;
+        border-radius: 20px 20px 0 0;
+        margin: 0;
+    }
+
+    #Lien_externe {
+        position:initial;
+        padding: 15px 14px;
+        border-radius: 0 0px 20px 20px;
+        margin-top: 49px;
+    }
+
+    /* -------A-propos----- */
+    .All_teachers1 {
+        flex-direction: column;
+    }
+
+    #Texte_a_propos {
+        margin: 12em 3% 0 3%;
+        font-size: 73%;
+    }
+
+    .banniere {
+        width: 100%;
+        margin-top: 4em;
+    }
+
+    .Titre h1 {
+        font-size: 193%;
+    }
+
+    .Titre p {
+        top: 33px;
+        font-size: 54%;
+        left: 60%;
+    }
+
+    /* ----contact--- */
+    .input_left{
+        margin: 0;
+    }
+    
+    .two_input {
+        flex-direction: column;
+    }
+
+    section#nous-contacter .two_input form input, section#nous-contacter .two_input form textarea {
+        width: 87%;
+    }
+
+
+    #envoyer{
+        margin-top: 20px;
+    }
+
+    section#nous-contacter .two_input form button {
+        margin: none;
+    }
+
+    #Texte_contacte {
+        margin: 6em 1em;
+    }
+
+    /* ----Séminaire */
+    .bloc_seminaire {
+        width: 94%;
+        flex-direction: column;
+    }
+
+    /* --Informations linguistique */
+    .Texte_cursus p {
+        padding: 0 4%;
+        font-size: 13px;
+    }
+
+    #programme_title {
+        font-size: 17px;
+    }
+
+    .PDF_download {
+        margin: 6em 1px;
+    }
+
+     /* ---Information Coranique */
+     #Tajwid {
+        margin: 8em 0;
+        flex-direction: column;
+    }
+
+    .tajwid_texte {
+        padding: 15px 1em;
+    }
+
+    .tajwid_texte p{
+        font-size: 12px;
+
+    }
+
+    #trait{
+        display: none;
+    }
+
+    #coranique_texte {
+        padding: 0 5%;
+    }
+
+    /* --Actualité */
+
+    .imageNtext_article {
+        flex-direction: column;
+    }
+
+    .Texte_articles_down {
+        width: 25em;
+    }
+
+    /* --formules */
+   
+
+    .images_formules {
+        display: none;
+    }
+
+    .images_formules_reverse {
+        display: none;
+    }
+
+    
+
+     /* ----formules */
+     .All_form {
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+    
+    .All_form1 {
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+
+    #hr_left, #hr_right {
+        width: 100%;
+    }
+
+    .text-formules {
+        font-size: 12px;
+    }
+
+    .texteNbtn_form h2 {
+        font-size: 32px;
+    }
+
+    .btn_formulaire {
+        margin-top: 2em;
+    }
+   
+
+   
+
+}
+
+
+@media screen and (max-width:645px) {
+    .valeurs{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:425px){
+  /* ---index media query */
+    #enseignement img {
+        Width: 95%;
+        height: none;
+    }
+
+    .All_bloc_atouts {
+        flex-wrap: wrap;
+    }
+
+    #btn_jaune {
+        padding: 10px 22px;
+    }
+
+    #btn_bleu {
+        padding: 10px 22px;
+    }
+
+    footer {
+        justify-content: flex-start;    
+        padding: 7em 64px;
+    }
+
+    .reseaux, .coordonnee, .Mentions_legale{
+        margin-top: 3em;
+    }
+
+    /* -----Librairie--- */
+    #Livres_liste {
+        padding: 0 1%;
+    }
+
+    /* ---contact */
+    section#nous-contacter .two_input form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ---informations linguistiques */
+    .level_different img {
+        width: 15em;
+    }
+
+   
+
+
+    
+}
+/* 
+@media screen and (min-width:320px){
+    #Tajwid {
+        margin: 8em 0;
+        flex-direction: column;
+    }
+
+    .tajwid_texte {
+        padding: 15px 1em;
+    }
+
+    #trait{
+        display: none;
+    }
+} */
